@@ -1,0 +1,22 @@
+{
+  "name": "login-flow-system",
+  "version": "1.0.0",
+  "description": "A simple OTP based login system using nodeJs , Express and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs",
+    "Backend",
+    "Express",
+    "authentication"
+  ],
+  "author": "Avijeet Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
