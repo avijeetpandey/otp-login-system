@@ -8,12 +8,8 @@ require('dotenv').config();
 
 
 Router.post("/",(req,res)=>{
-    
-     username = req.body.username;
-     password = req.body.password;
      let hashedPassword  = createSecurePassword(password ,"1100");
      let email = req.body.email;
-     let phone = req.body.phone;
 
      let q = `INSERT INTO USERS VALUES( '${username}' , '${email}' , '${hashedPassword}' , '${phone}' )`;
 
@@ -33,6 +29,7 @@ Router.post("/",(req,res)=>{
      });
 
 });
+
 
 
 module.exports = Router; 
