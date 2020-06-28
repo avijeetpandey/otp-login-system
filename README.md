@@ -33,6 +33,11 @@ In order to run the application make sure you have a database **users_db** creat
 2. User can login using the email and a OTP is sent to the specified mail ( Here I am using nodemailers Test Account to send mails) however in production environment we can use API's like **SendGrid or MailGun**
 3. OTP is sent and the otp can be viewed at by the address wriiten on the terminal 
 4. User enters the OTP and the Dashboard is rendered indicating succesfull login
+5. Server logs in case server crashes , that can be helpful to find the fault
+```
+**Example OTP Url**
+![Auth](screenshots/terminal.jpg)
+```
 
 ## Endpoints of The API
 

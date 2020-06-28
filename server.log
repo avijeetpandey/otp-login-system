@@ -17,3 +17,5 @@
 ::1 - - [28/Jun/2020:12:18:51 +0000] "GET /css/style.css HTTP/1.1" 304 - "http://localhost:3000/otp" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::1 - - [28/Jun/2020:12:18:51 +0000] "GET /register.png HTTP/1.1" 304 - "http://localhost:3000/otp" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::1 - - [28/Jun/2020:12:18:52 +0000] "GET /otp HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - avijeet [28/Jun/2020:13:02:14 +0000] "POST /login HTTP/1.1" 302 26 "-" "PostmanRuntime/7.26.1"
+::1 - avijeet [28/Jun/2020:13:02:14 +0000] "GET /otp HTTP/1.1" 200 1471 "http://localhost:3000/login" "PostmanRuntime/7.26.1"
