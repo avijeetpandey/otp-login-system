@@ -82,3 +82,27 @@ The body the register request contains the following
     "phone" : "<Enter the phone number here>"
 }
 ```
+![Auth](screenshots/register.jpg)
+
+**POST: localhost:3000/login**
+The body the login request contains the following
+```
+{
+    "email" : "<Enter your mail here>",
+}
+```
+![Auth](screenshots/login.jpg)
+
+**POST: localhost:3000/otp**
+The body the otp request contains the following
+```
+{
+    "email" : "<Enter your mail here>",
+    "otp" : "<Enter the otp here>"
+}
+```
+![Auth](screenshots/otp.jpg)
+
+
+
+## Thankyou , It was fun working on the assignment , looking forward to hear from you soon
