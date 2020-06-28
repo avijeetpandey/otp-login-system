@@ -4,7 +4,6 @@ const {createSecurePassword } = require('../model/user');
 const {sendEmail} = require('../config/mail');
 const sql = require('../config/db');
 
-
 require('dotenv').config();
 
 const generateOTP = ( ) => {
@@ -12,9 +11,11 @@ const generateOTP = ( ) => {
     return Math.floor(100000 + Math.random() * 900000) ;
 }
 
-Router.post("/",(req,res)=>{
+
+
+Router.post("/",(req,res,next)=>{
      let email = req.body.email;
-     let otp = generateOTP();
+     otp = generateOTP();
 
      let emailQuery = `SELECT EMAIL FROM USERS WHERE email='${email}'`;
 
@@ -26,18 +27,22 @@ Router.post("/",(req,res)=>{
                 })
             }
             else {
-                console.log(result);
                sendEmail(email,otp);
+               console.log(otp);
+               let otpQuery  = `INSERT INTO OTP VALUES  ('${email}' , '${otp}') ON DUPLICATE KEY UPDATE otp = ${otp}`;
+               
+               sql.query(otpQuery,(err,result)=>{
+                    if(err)
+                        console.log(err);
+               })
                res.status(200).json({
-                message : "OTP sent "
-            })
+                   message  : "OTP snet"
+               })
             }
-
-            
      });
 
 });
 
 
 
-module.exports = Router; 
+module.exports  = Router;
