@@ -49,5 +49,5 @@ This is the login page that is rendered when the user makes its request for ente
 ```
 This is the dashboard page rendered by the server
 ```
-![Auth](screenshots/loginPage.jpg)
+![Auth](screenshots/dashBoard.jpg)
 
