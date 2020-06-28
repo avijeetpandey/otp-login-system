@@ -71,3 +71,14 @@ This is the dashboard page rendered by the server
 ```
 ![Auth](screenshots/dashBoardPage.jpg)
 
+### 1 . POST Requests
+**POST: localhost:3000/register**
+The body the register request contains the following
+```
+{
+    "username" : "<Enter Your User name here>",
+    "email" : "<Enter your mail here>",
+    "password " : "<Enter your password here>",
+    "phone" : "<Enter the phone number here>"
+}
+```
