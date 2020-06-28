@@ -11,6 +11,7 @@ const validateOTP =require('./routes/otp');
 
 // middlewares
 app.use(bodyParser.json());
+app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/register", registerRoute);
 app.use("/login", loginRoute);
