@@ -1,0 +1,20 @@
+<%- include('partials/header') -%>
+<div class="container">
+    <img src="auth.png">
+    <h2>Please Enter OTP</h2>
+</div>
+
+
+<div class="container">
+    <form action="/otp" method="post">
+        <div class="form-group">
+            <label for="pwd">Email</label>
+            <input type="text" name="email" class="form-control" placeholder="Enter email" id="email">
+          </div>
+        <div class="form-group">
+          <label for="pwd">OTP</label>
+          <input type="text" name="otp" class="form-control" placeholder="Enter the OTP recieved" id="otp">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
