@@ -20,6 +20,17 @@ connection.connect((error) => {
     if (err) console.log("Cant create table users");
     else console.log("users table created");
   });
+
+
+  let createOTP =
+    "CREATE TABLE IF NOT EXISTS OTP ( email varchar(255) unique not null, otp int(6))";
+
+
+  connection.query(createOTP, (err) => {
+    if (err) console.log("Cant create table otp");
+    else console.log("otp table created");
+  });
+
 });
 
 module.exports = connection;
