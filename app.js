@@ -11,8 +11,12 @@ const validateOTP =require('./routes/otp');
 
 // middlewares
 app.use(bodyParser.json());
+app.use(express.static("public"));
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
+app.get('/',(req,res)=>{
+    res.render('register');
+})
 app.use("/register", registerRoute);
 app.use("/login", loginRoute);
 app.use('/otp',validateOTP);
