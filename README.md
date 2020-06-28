@@ -34,10 +34,10 @@ In order to run the application make sure you have a database **users_db** creat
 3. OTP is sent and the otp can be viewed at by the address wriiten on the terminal 
 4. User enters the OTP and the Dashboard is rendered indicating succesfull login
 5. Server logs in case server crashes , that can be helpful to find the fault
-```
+
+
 **Example OTP Url**
 ![Auth](screenshots/terminal.jpg)
-```
 
 ## Endpoints of The API
 
