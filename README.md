@@ -19,6 +19,14 @@
 - [x] **Views:**  contains templates to be served by server
 - [x] **Public :**  contains stylesheets ans illustrations to be served from the server
 
+## Setup :rocket:
+In order to run the application make sure you have a database **users_db** created into mysql after creating the database please follow the steps 
+0. Please clone this repository using git clone and cd into the directory
+1. Inside .env file please **update your mysql username and password**
+2. open terminal inside the directory and **npm install** to insatll all the dependencies
+3. **npm start** to start the development server 
+4. Cheers you've setup the project and the server is up and running
+
 ## Endpoints of The API
 
 ### 1 . GET Requests
