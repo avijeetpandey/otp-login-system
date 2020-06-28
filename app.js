@@ -7,13 +7,14 @@ const PORT = process.env.PORT || 3000;
 
 const registerRoute = require("./routes/register");
 const loginRoute = require("./routes/login");
+const validateOTP =require('./routes/otp');
 
 // middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/register", registerRoute);
 app.use("/login", loginRoute);
-
+app.use('/otp',validateOTP);
 app.listen(PORT, () => {
   console.log(`Server is up and running on PORT : ${PORT}`);
 });
