@@ -22,9 +22,32 @@
 ## Endpoints of The API
 
 ### 1 . GET Requests
-GET : localhost:3000/
-```
-This is the first page that is rendered when the user makes its first request to the server
+**GET: localhost:3000/**
 
 ```
+This is the first page that is rendered when the user makes its first request to the server
+```
 ![Auth](screenshots/registerPage.jpg)
+
+**GET: localhost:3000/login**
+
+```
+This is the login page that is rendered when the user makes its request for login to the server
+```
+![Auth](screenshots/loginPage.jpg)
+
+
+**GET: localhost:3000/otp**
+
+```
+This is the login page that is rendered when the user makes its request for entering the otp to the server
+```
+![Auth](screenshots/otpPage.jpg)
+
+**Dashboard Page when User is Authenticated**
+
+```
+This is the dashboard page rendered by the server
+```
+![Auth](screenshots/loginPage.jpg)
+
