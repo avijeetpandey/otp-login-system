@@ -13,6 +13,10 @@ const generateOTP = ( ) => {
 
 
 
+Router.get('/',(req,res)=>{
+    res.render('login');
+});
+
 Router.post("/",(req,res,next)=>{
      let email = req.body.email;
      otp = generateOTP();
@@ -35,9 +39,8 @@ Router.post("/",(req,res,next)=>{
                     if(err)
                         console.log(err);
                })
-               res.status(200).json({
-                   message  : "OTP snet"
-               })
+               console.log('OTP Sent')
+               res.status(200).redirect('/otp');
             }
      });
 

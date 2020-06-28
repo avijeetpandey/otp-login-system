@@ -1,6 +1,11 @@
 const Router = require('express').Router();
 const sql = require('../config/db');
 
+
+Router.get('/',(req,res)=>{
+  res.render('otp')
+})
+
 Router.post("/",(req,res)=>{
     let email = req.body.email;
     let otp = req.body.otp;
@@ -12,9 +17,7 @@ Router.post("/",(req,res)=>{
       console.log(err);
     else {
       if(result[0].otp==otp){
-        res.status(200).json({
-          messsage:'OTP validated'
-        });
+        res.status(200).render('welcome');
       }else{
         res.status(400).json({
           message : 'bad Request'
