@@ -105,4 +105,3 @@ The body the otp request contains the following
 
 
 
-## Thankyou , It was fun working on the assignment , looking forward to hear from you soon
